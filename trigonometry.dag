@@ -1,0 +1,7 @@
+Job angle angle.condor
+Job sine sine.condor
+Job cosine cosine.condor
+Job collect collect.condor
+PARENT angle CHILD sine cosine
+PARENT sine cosine CHILD collect
+Retry collect 3

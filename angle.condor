@@ -1,0 +1,8 @@
+executable = random_angle
+error = err_angle
+log = log_angle
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_output_files = angle.txt
+Requirements = UidDomain == "cloud.univalle.edu.co"
+queue

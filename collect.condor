@@ -1,0 +1,9 @@
+executable = collect
+transfer_input_files = cosineresult.txt,sineresult.txt
+output = trigonometry.txt
+error = err_collect
+log = log_collect
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+Requirements = UidDomain == "cloud.univalle.edu.co"
+queue
