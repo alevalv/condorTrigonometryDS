@@ -18,13 +18,13 @@ The result is written in `cosineresult.txt`
 `sineresult.txt` and `cosineresult.txt`, and the sum is written in standard output 
 
 ### Condor files
-* `angle.condor` specification for running `random_angle`
-* `sine.condor` specification for running `calc_sine`
-* `cosine.condor` specification for running `calc_cosine`
-* `collect.condor` specification for running `collect`
-* `trigonometry.dag` specification for running multiple jobs. The first execution must be `angle.condor` given that
+* `angle.condor` specification to run `random_angle`
+* `sine.condor` specification to run `calc_sine`
+* `cosine.condor` specification to run `calc_cosine`
+* `collect.condor` specification to run `collect`
+* `trigonometry.dag` specification to run multiple jobs. The first execution must be `angle.condor` given that
 `sine.condor` and `cosine.condor` (which are executed next) depend on the angle generation. The last execution must be
-`collect.condor` due to it requires sine and cosine values
+`collect.condor` since it requires sine and cosine values
 
 ### Makefile
 This file includes directives for compiling and running
