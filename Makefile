@@ -16,7 +16,7 @@ clean:
 	rm random_angle collect calc_cosine calc_sine angle.txt cosineresult.txt sineresult.txt trigonometry.txt
 
 cleancondor:
-	rm *.dag.* *.txt log_* err_* calc_sine calc_cosine collect
+	rm *.dag.* *.txt log_* err_* calc_sine calc_cosine collect random_angle
 
 run:
 	./random_angle
