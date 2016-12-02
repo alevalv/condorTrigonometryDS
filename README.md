@@ -5,7 +5,7 @@ Students: Alejandro Valdés and María Claudia Santamaría
 
 ## Project Content
 
-### C files:
+### C files
 * `random_angle.c` program that generates the angle and writes its value in a file called `angle.txt` 
 
 * `calc_sine.c` program that calculates the sine for the angle included in `angle.txt`. 
@@ -24,7 +24,7 @@ The result is written in `cosineresult.txt`
 * `collect.condor` specification for running `collect`
 * `trigonometry.dag` specification for running multiple jobs. The first execution must be `angle.condor` given that
 `sine.condor` and `cosine.condor` (which are executed next) depend on the angle generation. The last execution must be
-`collect.condor` due to it requires the sine and cosine values
+`collect.condor` due to it requires sine and cosine values
 
 ### Makefile
 This file includes directives for compiling and running
